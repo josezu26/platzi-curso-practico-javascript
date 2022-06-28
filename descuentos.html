@@ -21,8 +21,13 @@
         <input id="InputPrice" type="number"><br>
 
         <label for="InputDiscount">Escribe el descuento de tu producto</label><br>
-        <input id="InputDiscount" type="number"><br>
+        <input id="InputDiscount" type="number" readonly="" placeholder="Sin descuentos"><br>
+
+        <label for="InputCoupon">Ingresa el cupon de descuento:</label><br>
+        <input type="text" id="InputCoupon"><br>
+
         <button type="button" onclick="onClickButtonPriceDiscount()">Calcular el precio con descuento</button>
+        <button type="button" onclick="calcDiscountCouponButton()">Calcular con cupon de descuento</button>
 
         <p id="ResultP"></p>
     </form>
